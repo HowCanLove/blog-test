@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    document.head.innerHTML = '';
+    document.body.innerHTML = '';
+
+    for(let i = 1; i < 392; i++) {
+        var image = document.createElement('img');
+        image.setAttribute('src', 'https://book.yunzhan365.com/kwjt/nhoi/files/mobile/'+i+'.jpg?x-oss-process=image/resize,h_1800,w_1273')
+    document.body.appendChild(image);
+    }
+  </script>
+</body>
+</html>
